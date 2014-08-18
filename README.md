@@ -5,7 +5,8 @@ Example projects for using various NoSQL technologies
 
 Building the applications
 ==============
-You need to clone the whole repository by using the following command
+You need to clone the whole repository by using the following command:
+
 git clone https://github.com/jornfranke/lecture-nosql.git
 
 You will need to install Gradle (http://www.gradle.org)
@@ -20,11 +21,13 @@ Afterwards you can change into any of the subfolders to build the projects you a
 * solr-tutorial : Apache SolrCloud (Search technology)
 
 Once you changed into the corresponding subfolder you can execute the following command to build the application:
+
 gradle clean build
 
 Running an application
 ================
 You can use the following command to run an application:
+
 gradle run
 
 However, keep in mind that you need to have the corresponding server installed and you may need to adapt the server address in the source code.
