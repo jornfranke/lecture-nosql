@@ -37,7 +37,7 @@ public class Tutorial {
 	/** get the name of the actors playing in a movie starting with "The", such as "The Matrix **/
 	public void query1() {
 		System.out.println("Executing Query 1");
-		QueryResult<Map<String,Object>> qresult=engine.query("start movie=node:Movie(\"title:The*\") match movie<- [:ACTS_IN] - actor\n return actor", Collections.EMPTY_MAP);
+		QueryResult<Map<String,Object>> qresult=engine.query("start movie=node:Movie(title='The Matrix') match movie<- [:ACTS_IN] - actor\n return actor", Collections.EMPTY_MAP);
 		Iterator<Map<String,Object>> queryResultIterator = qresult.iterator();
 		while (queryResultIterator.hasNext()) {
 			Map<String,Object> row = queryResultIterator.next();
