@@ -20,12 +20,11 @@ import com.datastax.driver.core.Session;
  */
 public class ImportHelper {
 	private String convertDateTime(String sourceStr) {
-		 String source="01/Jul/1995:00:00:01 -0400";
 		 SimpleDateFormat sourceFormat = new SimpleDateFormat("dd/MMM/yyyy:HH:mm:ss Z");
 		 SimpleDateFormat destinationFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ssZ");
 	
 		 try {
-			Date realDate = sourceFormat.parse(source);
+			Date realDate = sourceFormat.parse(sourceStr);
 			
 			return destinationFormat.format(realDate);
 		} catch (ParseException e) {
