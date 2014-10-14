@@ -8,7 +8,7 @@ sourceCompatibility = 1.7
 version = '1.0'
 jar {
     manifest {
-        attributes 'Implementation-Title': 'DHBW Mannheim - Neue Konzepte (Big Data) - MongoDB Tutorial', 'Implementation-Version': version
+        attributes 'Implementation-Title': 'University Lecture - NoSQL - MongoDB Tutorial', 'Implementation-Version': version
     }
 }
 

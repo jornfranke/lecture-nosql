@@ -9,7 +9,7 @@ sourceCompatibility = 1.7
 version = '1.0'
 jar {
     manifest {
-        attributes 'Implementation-Title': 'DHBW Mannheim - Neue Konzepte (Big Data) - Neo4J Tutorial', 'Implementation-Version': version
+        attributes 'Implementation-Title': 'University Lecture - NoSQL - Neo4J Tutorial', 'Implementation-Version': version
     }
 }
 
