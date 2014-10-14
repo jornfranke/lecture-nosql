@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
+compileJava.options.encoding = 'UTF-8'
 
 mainClassName = 'org.university.tutorial.neo4j.Tutorial'
 
@@ -8,7 +9,7 @@ sourceCompatibility = 1.7
 version = '1.0'
 jar {
     manifest {
-        attributes 'Implementation-Title': 'University Lecture - NoSQL - Neo4J Tutorial', 'Implementation-Version': version
+        attributes 'Implementation-Title': 'DHBW Mannheim - Neue Konzepte (Big Data) - Neo4J Tutorial', 'Implementation-Version': version
     }
 }
 

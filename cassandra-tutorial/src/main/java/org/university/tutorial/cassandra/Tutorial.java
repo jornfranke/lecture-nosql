@@ -51,7 +51,7 @@ public class Tutorial {
 	   
 	   /*
 	    * Simple Query with Cassandra
-	    * performas a query and prints the column "destination" from the result set
+	    * performs a query and prints the column "destination" from the result set
 	    */
 	  public void query1() {
 		  String query = "SELECT * FROM logtest.logdata";

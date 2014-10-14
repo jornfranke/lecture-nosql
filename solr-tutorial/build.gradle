@@ -1,14 +1,14 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
-
+compileJava.options.encoding = 'UTF-8'
 mainClassName = 'org.university.tutorial.solr.Tutorial'
 
 sourceCompatibility = 1.7
 version = '1.0'
 jar {
     manifest {
-        attributes 'Implementation-Title': 'University Lecture - NoSQL - Solr Tutorial', 'Implementation-Version': version
+        attributes 'Implementation-Title': 'DHBW Mannheim - Neue Konzepte (Big Data) - Solr Tutorial', 'Implementation-Version': version
     }
 }
 
@@ -19,6 +19,7 @@ repositories {
 dependencies {
     compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
     compile group: 'commons-logging', name: 'commons-logging', version: '1.2' 
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.7'
     compile group: 'org.apache.solr', name: 'solr-solrj', version: '4.9.0'
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }

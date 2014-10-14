@@ -1,14 +1,14 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
-
+compileJava.options.encoding = 'UTF-8'
 mainClassName = 'org.university.tutorial.mongodb.Tutorial'
 
 sourceCompatibility = 1.7
 version = '1.0'
 jar {
     manifest {
-        attributes 'Implementation-Title': 'University Lecture - NoSQL - MongoDB Tutorial', 'Implementation-Version': version
+        attributes 'Implementation-Title': 'DHBW Mannheim - Neue Konzepte (Big Data) - MongoDB Tutorial', 'Implementation-Version': version
     }
 }
 
