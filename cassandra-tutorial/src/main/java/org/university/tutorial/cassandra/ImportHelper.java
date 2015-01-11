@@ -56,6 +56,8 @@ public class ImportHelper {
 				   int destinationipStart=0;
 					  int destinationipEnd =line.indexOf(" ");
 					  String destinationip=line.substring(destinationipStart,destinationipEnd);
+					  //Escape destination ip
+					  destinationip=destinationip.replaceAll("'","''");
 					  //System.out.println(destinationip);
 					  int sourceDateStart = line.indexOf("[",destinationipEnd)+1;
 					  int sourceDateEnd = line.indexOf("]",sourceDateStart);
@@ -64,6 +66,8 @@ public class ImportHelper {
 					  int quoteStart = line.indexOf("\"")+1;
 					  int quoteEnd = line.indexOf("\"",quoteStart);
 					  String request=line.substring(quoteStart,quoteEnd);
+					  // Escape request
+					  request=request.replaceAll("'","''");
 					  //System.out.println(request);
 					  int httpCodeStart=quoteEnd+2;
 					  int httpCodeEnd=line.indexOf(" ",httpCodeStart);
