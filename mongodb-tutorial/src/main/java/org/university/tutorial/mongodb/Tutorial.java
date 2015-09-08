@@ -3,7 +3,6 @@
  */
 package org.university.tutorial.mongodb;
 
-import java.net.UnknownHostException;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
@@ -23,12 +22,8 @@ public class Tutorial {
 	 * Connect to a mongodb server
 	 */
 	public void connect(String host) {
-		try {
+		
 			 mongoClient = new MongoClient(host);
-		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 	
 	/* select database */
