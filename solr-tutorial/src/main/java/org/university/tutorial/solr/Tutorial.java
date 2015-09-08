@@ -68,6 +68,8 @@ public class Tutorial {
 		} catch (SolrServerException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 		SolrDocumentList results = response.getResults();
 		System.out.println(results.size()+" results");
